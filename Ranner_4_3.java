@@ -1,7 +1,9 @@
 import com.sun.jdi.IntegerValue;
 
 import java.util.Scanner;
-
+//1.Ввести с помощью консоли произвольное количество символов (любых). Сложить все
+//введенные числа, а все введенные буквы сконкатенировать в одну строку (использовать
+//StringBuilder).
 public class Ranner_4_3 {
 
     public static void main(String[] args) {
