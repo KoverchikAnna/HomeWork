@@ -32,6 +32,7 @@ public class Circle {
         this.xCoordinateCenterCircle = scanner.nextInt();
         this.yCoordinateCenterCircle = scanner.nextInt();
         this.radiusCircle = scanner.nextInt();
+        scanner.close();
         return;
     }
 
@@ -65,7 +66,7 @@ public class Circle {
         return radiusCircle;
     }
 
-    public int lengthCentersTwoCircle(double xCoordinateCenterCircle, double yCoordinateCenterCircle, double x1CoordinateCenterCircle, double y1CoordinateCenterCircle) {
+    public int lengthCentersTwoCircle(int xCoordinateCenterCircle, int yCoordinateCenterCircle, int x1CoordinateCenterCircle, int y1CoordinateCenterCircle) {
         int lengthCentersTwoCircle = (int)Math.sqrt(Math.pow((xCoordinateCenterCircle - x1CoordinateCenterCircle), 2) + Math.pow((yCoordinateCenterCircle - y1CoordinateCenterCircle), 2));
         return lengthCentersTwoCircle;
     }

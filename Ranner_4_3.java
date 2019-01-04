@@ -5,11 +5,13 @@ import java.util.Scanner;
 //введенные числа, а все введенные буквы сконкатенировать в одну строку (использовать
 //StringBuilder).
 public class Ranner_4_3 {
-
+//Ввести с помощью консоли произвольное количество символов (любых).
+//Сложить введенные буквы в одну строку (использовать StringBuilder).
     public static void main(String[] args) {
         System.out.println("Введите строку символов. ");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
+        scanner.close();
         StringBuilder stringBuilder = new StringBuilder(str);
 
         int sum = 0;

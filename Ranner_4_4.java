@@ -31,5 +31,6 @@ public class Ranner_4_4 {
                 }
             }
         }
+        scanner.close();
     }
 }
