@@ -1,5 +1,10 @@
 package Customers;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static jdk.nashorn.internal.objects.Global.print;
+
 public class CustomerRanner {
     //Создать классы, спецификации которых приведены ниже.
     // Определить конструкторы и методв setТип(), getТип(), toString()
@@ -18,19 +23,18 @@ public class CustomerRanner {
                 "Pinsk,str Center, 23-56", 613113131, 15863);
         Customer customer2 = new Customer(5, "Petov", "Mihail", "Nikolaevich",
                 "Pinsk,str Center, 23-56", 1321354661, 16461);
+        List<Customer> customers = new ArrayList<Customer>();
+        List<Customer> customers1 = new ArrayList<Customer>();
+        customers.add(customer0);
+        customers.add(customer1);
+        customers.add(customer2);
 
-        Customers customers = new Customers();
-        customers.addCustomer(customer1);
-        customers.addCustomer(customer2);
-        customers.addCustomer(customer0);
+        CustomerService.print(customers);
 
-        customers.print();
-
-        customers.listPatientsNumberCreditCardOfInterval(134564631, 613113135);
+        CustomerService.listPatientsNumberCreditCardOfInterval(customers, 134564631, 613113135);
 
         System.out.println("Sort");
-        customers.sortCustomer();
-
-        customers.print();
+        CustomerService.sortCustomer(customers);
+        CustomerService.print(customers);
     }
 }

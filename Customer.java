@@ -40,7 +40,7 @@ public class Customer {
     public String toString() {
         return getClass().getName() + " id: " + id + " surname: " + surname + " @name: " + name
                 + " patronymic: " + patronymic + " address: " + address + " numberCreditCard: " + numberCreditCard +
-                " numberBankAccount " + numberCreditCard;
+                " numberBankAccount " + numberBankAccount;
     }
 
     public int getId() {
